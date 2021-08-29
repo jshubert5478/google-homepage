@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+    <!--<link href = "main.css" rel = "stylesheet">-->
+    <title>Mock Google Page</title>
+    <style>
+body {
+    align-content : center;
+    border-width: 3px;
+    border-style: solid;
+    border-color: blue;   
+}
+.displayed {
+    display: block;
+    width: 30%;
+    margin: 5em auto;
+    border-width: 3px;
+    border-style: solid;
+    border-color: red;
+}
+.searchbar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: yellow;
+}
+a {
+    padding: 10px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: orange;
+}
+header {
+    position:relative;
+    border-width: 3px;
+    border-style: solid;
+    border-color: blue;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    border-width: 3px;
+    border-style: solid;
+    border-color: blue;
+}
+.left {
+    display: inline;
+    position: absolute;
+    left: 3%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: red;
+}
+.right {
+    display: inline;
+    position: absolute;
+    right: 3%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: red;
+}
+.bottom {
+    width: 100%
+    position: fixed;
+    bottom: 0;
+}
+</style>
+    </head>
+    <body>
+        <header>
+            <nav class="left">
+            <a>About</a>
+            <a>Store</a></nav>
+            <nav class="right">
+            <a>Gmail</a>
+            <a>Images</a>
+            <a>Apps</a>
+            <a>Sign In</a></nav>
+        </header>
+     
+        <img class = "displayed" src = "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"> 
+        <div class = "searchbar"> <input type = search; size = 70></div>
+
+        <div class="bottom"><footer>
+            <nav class="left">
+                <a>Advertising</a>
+                <a>Business</a>
+                <a>How Search Works</a></nav>
+                <nav class="right">
+                <a>Privacy</a>
+                <a>Terms</a>
+                <a>Settings</a></nav>
+                </footer>
+        </div>
+    </body>
+</html>

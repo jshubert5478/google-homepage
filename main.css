@@ -1,0 +1,16 @@
+body {
+    align-content : center;
+    background-color: cadetblue;
+   
+}
+
+div.searchbar {
+    margin: auto;
+    width: 70%;
+}
+
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
