@@ -6,27 +6,20 @@
     <title>Mock Google Page</title>
     <style>
 body {
+    height: 100vh;
+    position: relative;
     align-content : center;
-    border-width: 3px;
-    border-style: solid;
-    border-color: blue;   
 }
-.displayed {
-    display: block;
-    width: 30%;
-    margin: 5em auto;
-    border-width: 3px;
-    border-style: solid;
-    border-color: red;
-}
-.searchbar {
+.center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 35%;
+    margin: 5em auto 10em auto;
     border-width: 3px;
     border-style: solid;
-    border-color: yellow;
+    border-color: blue;
+
 }
 a {
     padding: 10px;
@@ -36,16 +29,19 @@ a {
 }
 header {
     position:relative;
-    border-width: 3px;
+    top: -3em;
+    /*border-width: 3px;
     border-style: solid;
-    border-color: blue;
+    border-color: blue;*/
 }
 footer {
-    position: fixed;
+    display:block;
+    position: relative;
     bottom: 0;
-    border-width: 3px;
-    border-style: solid;
-    border-color: blue;
+    background-color: lightgrey;
+    border: 2px solid green;
+            margin: 5px;
+            padding: 5px;
 }
 .left {
     display: inline;
@@ -65,13 +61,31 @@ footer {
 }
 .bottom {
     width: 100%
-    position: fixed;
+    position: absolute;
     bottom: 0;
+    border-width: 3px;
+    border-style: dotted;
+    border-color: red;
+}
+nav {
+    border: 0px solid green;
+            margin: 0px;
+            padding: 0px;
+}
+ul {
+    display: block;
+    position: relative;
+}
+li {
+    display: inline;
+}
+.float-right {
+    float:left;
 }
 </style>
     </head>
     <body>
-        <header>
+        <header><!--This is the Header-->
             <nav class="left">
             <a>About</a>
             <a>Store</a></nav>
@@ -82,19 +96,22 @@ footer {
             <a>Sign In</a></nav>
         </header>
      
-        <img class = "displayed" src = "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"> 
-        <div class = "searchbar"> <input type = search; size = 70></div>
+        <img class = "center" src = "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"> 
+        <div class = "center"> <input type = search; size = 70></div>
 
-        <div class="bottom"><footer>
-            <nav class="left">
-                <a>Advertising</a>
-                <a>Business</a>
-                <a>How Search Works</a></nav>
-                <nav class="right">
-                <a>Privacy</a>
-                <a>Terms</a>
-                <a>Settings</a></nav>
-                </footer>
-        </div>
+        <footer> <!--This is the footer-->
+            <nav>
+                <ul>
+                <span class="left">
+                <li><a>Advertising</a></li>
+                <li><a>Business</a></li>
+                <li><a>How Search Works</a></li></span>
+                <span class="right">
+                <li><a>Privacy</a></li>
+                <li><a>Terms</a></li>
+                <li><a>Settings</a></li></span>
+                </ul>
+            </nav>
+            </footer>
     </body>
 </html>
